@@ -1,5 +1,5 @@
 object q4 extends App {
-    val profitt = profit(35)
+    val profitt = profit(15)
     println("Profit is " + profitt )
 }
 
