@@ -5,7 +5,7 @@ def reverseString(str: String): String = {
   else reverseString(str.tail) + str.head
 }
 
-val input = "hello"
+val input = "computing"
 val reversed = reverseString(input)
 println(s"Original: $input, Reversed: $reversed") 
 }
