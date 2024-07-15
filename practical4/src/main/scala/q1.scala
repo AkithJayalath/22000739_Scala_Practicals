@@ -1,18 +1,18 @@
 object q1 {
-  // Sample arrays for item names and quantities
+ 
   var itemNames = Array("apple", "banana", "orange")
   var itemQuantities = Array(50, 20, 30)
 
-  // Function to display the inventory
+  
   def displayInventory(names: Array[String], quantities: Array[Int]): Unit = {
     println("Inventory:")
     for ((name, quantity) <- names.zip(quantities)) {
       println(s"$name: $quantity")
     }
-    println()  // for an extra line break
+    println()  
   }
 
-  // Function to restock an item
+  
   def restockItem(names: Array[String], quantities: Array[Int], itemName: String, quantity: Int): Unit = {
     val index = names.indexOf(itemName)
     if (index != -1) {
@@ -23,7 +23,7 @@ object q1 {
     }
   }
 
-  // Function to sell an item
+  
   def sellItem(names: Array[String], quantities: Array[Int], itemName: String, quantity: Int): Unit = {
     val index = names.indexOf(itemName)
     if (index != -1) {
@@ -38,7 +38,7 @@ object q1 {
     }
   }
 
-  // Main method to test the functions
+  
   def main(args: Array[String]): Unit = {
     displayInventory(itemNames, itemQuantities)
     restockItem(itemNames, itemQuantities, "banana", 10)
