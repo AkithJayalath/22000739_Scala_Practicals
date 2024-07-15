@@ -6,7 +6,7 @@ object q2 {
    
     val input = scala.io.StdIn.readInt()
     
-    // Pattern matching to determine the output
+    
     input match {
       case x if x <= 0 => println("Negative/Zero")
       case x if x % 2 == 0 => println("Even number ")
