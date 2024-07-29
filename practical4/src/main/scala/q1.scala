@@ -1,4 +1,4 @@
-object q1 {
+pobject q1 {
  
   var itemNames = Array("apple", "banana", "orange")
   var itemQuantities = Array(50, 20, 30)
