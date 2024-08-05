@@ -1,7 +1,7 @@
 import scala.io.StdIn.readLine
 import scala.util.Try
 
-object StudentManagement {
+object q2 {
 
   // Function to validate input
   def validateInput(name: String, marksStr: String, totalMarksStr: String): (Boolean, Option[String]) = {
