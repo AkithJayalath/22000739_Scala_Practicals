@@ -3,6 +3,7 @@ object q2 extends App{
      val input = scala.io.StdIn.readInt()
 
      val categorizeNumber: Int => String = {
+      case n if n % 3 == 0 && n % 5 == 0 && n % 7 == 0  && n % 8 == 0 => "This is a multiple of Three,Five,Seven & Eight"
       case n if n % 3 == 0 && n % 5 == 0 => "Multiple of Both Three and Five"
       case n if n % 3 == 0               => "Multiple of Three"
       case n if n % 5 == 0               => "Multiple of Five"
